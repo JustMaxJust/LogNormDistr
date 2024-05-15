@@ -23,7 +23,7 @@ jobs:
                java-version: 17
                distribution: 'zulu'
          -  uses: gradle/gradle-build-action@v2
-            run: ./gradlew build --stacktrace
+         -  run: ./gradlew build --stacktrace
 
    run-unit-tests:
       name: Unit tests
