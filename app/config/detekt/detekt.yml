@@ -11,3 +11,13 @@ style:
       active: false
    UnusedPrivateProperty:
       active: false
+   FunctionParameterNaming:
+      active: false
+   ReturnCount:
+      active: false
+   NewLineAtEndOfFile:
+      active: false
+   FunctionOnlyReturningConstant:
+      active: false
+   UnusedParameter:
+      active: false
