@@ -86,4 +86,9 @@ class UnitTest {
         assertNotEquals(res2, res3)
         assertNotEquals(res1, res3)
     }
+
+    @Test
+    fun checkTestFail() {
+        assertNotNull(null)
+    }
 }

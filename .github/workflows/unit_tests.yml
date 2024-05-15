@@ -8,6 +8,7 @@ on:
 
 jobs:
    validation:
+      name: Validation
       runs-on: macos-latest
       steps:
          -  uses: actions/checkout@v3
