@@ -1,0 +1,7 @@
+[versions]
+kakao = "3.5.1"
+commonsMath3 = "3.6.1"
+
+[libraries]
+kakao = { module = "io.github.kakaocup:kakao", version.ref = "kakao" }
+commons-math3 = { module = "org.apache.commons:commons-math3", version.ref = "commonsMath3" }
