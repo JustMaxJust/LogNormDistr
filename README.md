@@ -13,8 +13,8 @@ Detekt. </p><br>
 <h3>Снимки: </h3>
 
 <img width="360" src="https://github.com/JustMaxJust/LogNormDistr/assets/135048188/716ad606-ec32-47da-9585-879a71eb19ef"><br>
-<img width="250" src="https://github.com/JustMaxJust/LogNormDistr/assets/135048188/f46b5e65-6039-432c-9b71-e9a017423998">
-<img width="250" src="https://github.com/JustMaxJust/LogNormDistr/assets/135048188/14178998-5ca3-4751-82e4-75e5f5ef9235"><br>
-<img width="556" src="https://github.com/JustMaxJust/LogNormDistr/assets/135048188/d7d63645-bc8d-46fa-92c5-0eb9064709df"><br>
-<img width="250" src="https://github.com/JustMaxJust/LogNormDistr/assets/135048188/e789ee08-037c-4a45-8851-4798f4705ff4">
-<img width="250" src="https://github.com/JustMaxJust/LogNormDistr/assets/135048188/e5693080-e8ab-47d2-85f4-9aad8be15117"><br>
+<img width="250" src="https://github.com/JustMaxJust/LogNormDistr/assets/135048188/3d5c7321-a873-4a7b-98ee-8a3511a0cd36">
+<img width="250" src="https://github.com/JustMaxJust/LogNormDistr/assets/135048188/891ff814-6166-4491-859b-42f7c0ff8535"><br>
+<img width="556" src="https://github.com/JustMaxJust/LogNormDistr/assets/135048188/73870c60-756f-40a0-aff0-c4b8810d6aa5"><br>
+<img width="250" src="https://github.com/JustMaxJust/LogNormDistr/assets/135048188/e55f0373-304c-4e5c-bf4f-7aa04d8d6889">
+<img width="250" src="https://github.com/JustMaxJust/LogNormDistr/assets/135048188/86b55560-28c9-4774-bfa2-c64854194bec"><br>
