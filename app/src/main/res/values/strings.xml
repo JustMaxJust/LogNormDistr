@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LognormDistr</string>
+    <string name="app_name">LogNormDistr</string>
     <string name="mean_val_hint">μ</string>
     <string name="variance_value_hint">σ²</string>
     <string name="get_random_num_text">Сгенерировать</string>
