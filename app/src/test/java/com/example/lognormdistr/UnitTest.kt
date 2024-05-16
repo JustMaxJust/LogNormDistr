@@ -19,13 +19,13 @@ class UnitTest {
     fun checkCorrectInput() {
         assertEquals("1,2", InputHandler.handle(
             "1", "2",
-            fun (str1, str2): String { return "$str1,$str2" },
-            fun (errorMsg: String): String { return errorMsg }
+            { str1, str2 -> "$str1,$str2" },
+            { errorMsg -> errorMsg }
         ))
         assertEquals("1.5,2.5", InputHandler.handle(
             "1.5", "2.5",
-            fun (str1, str2): String { return "$str1,$str2" },
-            fun (errorMsg: String): String { return errorMsg }
+            { str1, str2 -> "$str1,$str2" },
+            { errorMsg -> errorMsg }
         ))
     }
 
@@ -33,18 +33,18 @@ class UnitTest {
     fun checkEmptyInput() {
         assertEquals(InputHandler.emptyInputMsg, InputHandler.handle(
             "", "",
-            fun (_, _): String { return "Success" },
-            fun (errorMsg: String): String { return errorMsg }
+            { _, _ -> "Success" },
+            { errorMsg -> errorMsg }
         ))
         assertEquals(InputHandler.emptyInputMsg, InputHandler.handle(
             "1", "",
-            fun (_, _): String { return "Success" },
-            fun (errorMsg: String): String { return errorMsg }
+            { _, _ -> "Success" },
+            { errorMsg -> errorMsg }
         ))
         assertEquals(InputHandler.emptyInputMsg, InputHandler.handle(
             "", "2",
-            fun (_, _): String { return "Success" },
-            fun (errorMsg: String): String { return errorMsg }
+            { _, _ -> "Success" },
+            { errorMsg -> errorMsg }
         ))
     }
 
@@ -52,18 +52,18 @@ class UnitTest {
     fun checkNonNumericInput() {
         assertEquals(InputHandler.nonNumericInputMsg, InputHandler.handle(
             "a", "b",
-            fun (_, _): String { return "Success" },
-            fun (errorMsg: String): String { return errorMsg }
+            { _, _ -> "Success" },
+            { errorMsg -> errorMsg }
         ))
         assertEquals(InputHandler.nonNumericInputMsg, InputHandler.handle(
             "a", "2",
-            fun (_, _): String { return "Success" },
-            fun (errorMsg: String): String { return errorMsg }
+            { _, _ -> "Success" },
+            { errorMsg -> errorMsg }
         ))
         assertEquals(InputHandler.nonNumericInputMsg, InputHandler.handle(
             "1", "b",
-            fun (_, _): String { return "Success" },
-            fun (errorMsg: String): String { return errorMsg }
+            { _, _ -> "Success" },
+            { errorMsg -> errorMsg }
         ))
     }
 
@@ -85,5 +85,16 @@ class UnitTest {
         assertNotEquals(res1, res2)
         assertNotEquals(res2, res3)
         assertNotEquals(res1, res3)
+    }
+
+    @Test
+    fun genLND() {
+        var res = ""
+        val mu = 0.0
+        val sigma = 0.25
+        for (i in 1..1_0000) {
+            res += (LognormalDistribution.generate(mu, sigma) * 100).toInt().toString() + ", "
+        }
+        println(res)
     }
 }
