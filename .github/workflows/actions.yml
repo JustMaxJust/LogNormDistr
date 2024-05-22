@@ -59,12 +59,12 @@ jobs:
 
          -  uses: actions/setup-java@v2
             with:
-               distribution: 'adopt'
-               java-version: '8'
+               distribution: 'zulu'
+               java-version: '17'
 
          -  uses: reactivecircus/android-emulator-runner@v2
             with:
-               api-level: 29
+               api-level: 31
                target: default
                arch: x86
 
@@ -73,5 +73,3 @@ jobs:
          -  run: sleep 30
 
          -  run: ./gradlew connectedAndroidTest --scan --stacktrace
-
-         -  run: adb -s emulator-5554 emu kill
