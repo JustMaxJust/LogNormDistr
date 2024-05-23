@@ -72,7 +72,7 @@ jobs:
                arch: x86_64
                script: echo "[ Trying to start emulator ]"
 
-         -  run: emulator -avd Pixel_3a_API_34_extension_level_7_arm64-v8a -no-audio -no-boot-anim -accel on
+         -  run: emulator -avd Pixel_2_API_29 -no-audio -no-boot-anim -accel on
 
          -  run: sleep 30
 
