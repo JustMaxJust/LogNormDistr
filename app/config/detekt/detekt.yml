@@ -13,4 +13,4 @@ style:
       active: false
 
 build:
-   maxIssues: -1
+   maxIssues: 50

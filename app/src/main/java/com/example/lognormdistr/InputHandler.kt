@@ -5,12 +5,14 @@ object InputHandler {
     const val nonNumericInputMsg = "Одно из значений неверно"
 
     fun handle(str1: String, str2: String, onSuccess: (String, String) -> Any, onError: (String) -> Any): Any {
-        if (str1.isEmpty() || str2.isEmpty()) {
-            return onError(emptyInputMsg)
-        }
-        if (str1.toDoubleOrNull() == null || str2.toDoubleOrNull() == null) {
-            return onError(nonNumericInputMsg)
-        }
-        return onSuccess(str1, str2)
+        val result =
+            if (str1.isEmpty() || str2.isEmpty()) {
+                onError(emptyInputMsg)
+            } else if (str1.toDoubleOrNull() == null || str2.toDoubleOrNull() == null) {
+                onError(nonNumericInputMsg)
+            } else {
+                onSuccess(str1, str2)
+            }
+        return result
     }
 }
