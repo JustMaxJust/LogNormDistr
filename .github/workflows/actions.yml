@@ -70,10 +70,4 @@ jobs:
                api-level: 34
                target: default
                arch: x86_64
-               script: emulator -list-avds ; ./gradlew connectedCheck --scan --stacktrace
-
-         -  run: emulator -avd Pixel_2_API_29 -no-audio -no-boot-anim -accel on
-
-         -  run: sleep 30
-
-         -  run: ./gradlew connectedAndroidTest --scan --stacktrace
+               script: emulator -list-avds ; ./gradlew connectedAndroidTest --scan
