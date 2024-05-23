@@ -69,6 +69,7 @@ jobs:
                api-level: 31
                target: default
                arch: x86
+               script: echo "[ Trying to start emulator ]"
 
          -  run: emulator -avd Pixel_2_API_29 -no-audio -no-boot-anim -accel on
 
