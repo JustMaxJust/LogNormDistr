@@ -67,7 +67,7 @@ jobs:
 
          -  uses: reactivecircus/android-emulator-runner@v2
             with:
-               api-level: 14
+               api-level: 34
                target: default
                arch: arm64
                script: echo "[ Trying to start emulator ]"
